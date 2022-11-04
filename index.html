@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unit.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <div class="container">
+        <div class="title"><h1>Inch To cms</h1></div>
+        <div class="content">
+          <form action="#">
+            
+              <div class="input-box">
+                <span class="details">Inch</span>
+                <input type="number" placeholder="Ex - " required id="input">
+
+              </div>
+              <div class="input-box">
+                <span class="details">cms</span>
+                <input type="number" placeholder="Your Answer"  id="output">
+              </div> 
+             <input type="reset" value="Reset" id="btn">
+          </form>
+        </div>
+      </div>
+      
+
+
+      <!-- script style -->
+      <script>
+          
+          var userInput = document.getElementById("input"); 
+          var outPut = document.getElementById("output"); 
+          var btn = document.getElementById("btn"); 
+
+           userInput.addEventListener('input', function(){
+            let inch = this.value;
+            let i = inch*2.54;
+            outPut.value = i;
+           });
+           outPut.addEventListener('input', function(){
+            let cms = this.value;
+            let inch = cms/2.54;
+            userInput.value = inch;
+           });
+
+
+      </script>
+</body>
+</html>

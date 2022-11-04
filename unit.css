@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding :0;
+    
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #39365f;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    /* text-align: center; */
+}
+body h1{
+    margin-bottom: 30px;
+    color: crimson;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+}
+body h1:hover{
+    background: #fff;
+}
+.container{
+    max-width: 500px;
+    width: 75%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.container .title{
+    margin-bottom: 20px;
+    font
+}
+.container .content{
+    margin-bottom: 30px;
+}
+ .container #btn{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+ }
+.container .content .input-box span{
+    font-size: 3.5vmin;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.container .content .input-box input{
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.container .content .input-box input{
+    height: 45px;
+    width: 50%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+  }
+  .container   #btn:hover{
+    background: none;
+    color: black;
+    font-weight: 500;
+  }
